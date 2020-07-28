@@ -1,0 +1,113 @@
+@import 'libs/reset.scss';
+@import 'libs/functions.scss';
+@import 'libs/responsive.scss';
+@import 'libs/mixins.scss';
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'tooltype.scss';
+
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: $base-font-size;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  line-height: 1.4; // 1.4 - 1.6 max for most cases
+  background: $base-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+h2 {
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2em;
+  // color: $primary-color;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+  // color: $primary-color;
+}
+
+h4 {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 1.7em;
+}
+
+p {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  background: transparent;
+  border: none;
+  color: $primary-color;
+
+  $button-height: em(20px);
+  height: $button-height;
+  border-radius: $button-height / 2;
+  padding: 0 1em;
+
+  transition: all 0.5s;
+
+  // &:hover {
+  //   color: $secondary-color;
+  // }
+
+  // &:active {
+  //   transition: none;
+  //   color: $base-color;
+  // }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
